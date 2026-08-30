@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FocusTune | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- 背景 -->
+  <div class="music-bg">
+    <div class="circle-wave wave1"></div>
+    <div class="circle-wave wave2"></div>
+    <div class="circle-wave wave3"></div>
+  </div>
+
+  <main class="page detail-page focustune-page">
+
+    <!-- 戻る -->
+    <a href="index.html" class="back-link">
+      ← Back to Top
+    </a>
+
+    <!-- タイトル -->
+    <section class="top">
+
+      <div class="equalizer">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <h1>FocusTune</h1>
+      <h2>集中支援・作業用BGM推薦アプリ</h2>
+
+      <div class="development-badge">
+        DEVELOPMENT IN PROGRESS
+      </div>
+
+    </section>
+
+
+    <!-- 概要 -->
+    <section class="section">
+
+      <h2 class="section-title">概要</h2>
+
+      <div class="text-block">
+
+        <p>
+          FocusTuneは、作業内容やユーザーの集中度評価をもとに、
+          一人ひとりに適した作業用BGMを推薦する
+          集中支援Webアプリケーションです。
+        </p>
+
+        <p>
+          大学で取り組んでいる「作業用BGMと集中」に関する研究を、
+          実際に利用できるサービスへ発展させることを目的として開発しています。
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- アプリ画面 -->
+    <section class="section">
+
+      <h2 class="section-title">アプリ画面</h2>
+
+      <div class="focustune-screens">
+
+        <!-- ログイン -->
+        <div class="screen-card">
+
+          <div class="screen-label">
+            01 / LOGIN
+          </div>
+
+          <div class="screen-image login-screen">
+            <img
+              src="images/focustune-login.png"
+              alt="FocusTune ログイン画面"
+            >
+          </div>
+
+          <h3>ログイン</h3>
+
+          <p>
+            ユーザーごとの作業履歴や集中度データを
+            管理するためのログイン画面。
+          </p>
+
+        </div>
+
+
+        <!-- ホーム -->
+        <div class="screen-card">
+
+          <div class="screen-label">
+            02 / DASHBOARD
+          </div>
+
+          <div class="screen-image">
+            <img
+              src="images/focustune-home.png"
+              alt="FocusTune ホーム画面"
+            >
+          </div>
+
+          <h3>Focus Dashboard</h3>
+
+          <p>
+            集中時間・作業回数・平均集中度などを確認し、
+            新しい集中セッションを開始できます。
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- コンセプト -->
+    <section class="section">
+
+      <h2 class="section-title">コンセプト</h2>
+
+      <div class="concept-box">
+
+        <p class="concept-en">
+          MUSIC × FOCUS × DATA
+        </p>
+
+        <p class="concept-main">
+          「集中できる音」を、<br>
+          あなたの記録から。
+        </p>
+
+        <p class="concept-description">
+          作業内容、使用したBGM、作業後の集中度などを記録し、
+          蓄積されたデータからユーザーに適した作業環境を提案します。
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- 主な機能 -->
+    <section class="section">
+
+      <h2 class="section-title">主な機能</h2>
+
+      <div class="feature-grid">
+
+        <div class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>ACCOUNT</h3>
+          <p>ユーザー登録・ログイン</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number">02</span>
+          <h3>TASK</h3>
+          <p>作業内容・作業時間の登録</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>TIMER</h3>
+          <p>ポモドーロタイマー</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number">04</span>
+          <h3>MUSIC</h3>
+          <p>作業用BGMの再生</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number">05</span>
+          <h3>RATING</h3>
+          <p>作業後の集中度評価</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number">06</span>
+          <h3>HISTORY</h3>
+          <p>お気に入り・スキップ履歴</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number">07</span>
+          <h3>DASHBOARD</h3>
+          <p>集中時間・評価の可視化</p>
+        </div>
+
+        <div class="feature-card">
+          <span class="feature-number">08</span>
+          <h3>RECOMMEND</h3>
+          <p>ユーザー別BGM推薦</p>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- 技術 -->
+    <section class="section">
+
+      <h2 class="section-title">技術構成</h2>
+
+      <div class="skill-tags">
+        <span>Next.js</span>
+        <span>TypeScript</span>
+        <span>Tailwind CSS</span>
+        <span>FastAPI</span>
+        <span>Python</span>
+        <span>PostgreSQL</span>
+      </div>
+
+    </section>
+
+
+    <!-- 実装状況 -->
+    <section class="section">
+
+      <h2 class="section-title">実装状況</h2>
+
+      <div class="development-status">
+
+        <div class="status-item complete">
+
+          <div class="status-heading">
+            <span>ユーザー認証・ログイン</span>
+            <span>IMPLEMENTED</span>
+          </div>
+
+          <div class="status-bar">
+            <div class="status-progress full"></div>
+          </div>
+
+        </div>
+
+
+        <div class="status-item complete">
+
+          <div class="status-heading">
+            <span>タスク・作業履歴管理</span>
+            <span>IMPLEMENTED</span>
+          </div>
+
+          <div class="status-bar">
+            <div class="status-progress full"></div>
+          </div>
+
+        </div>
+
+
+        <div class="status-item">
+
+          <div class="status-heading">
+            <span>BGM再生・集中度評価</span>
+            <span>IN PROGRESS</span>
+          </div>
+
+          <div class="status-bar">
+            <div class="status-progress progress-60"></div>
+          </div>
+
+        </div>
+
+
+        <div class="status-item">
+
+          <div class="status-heading">
+            <span>ユーザー別BGM推薦</span>
+            <span>PLANNED</span>
+          </div>
+
+          <div class="status-bar">
+            <div class="status-progress progress-25"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- 今後 -->
+    <section class="section">
+
+      <h2 class="section-title">今後の展望</h2>
+
+      <div class="text-block">
+
+        <p>
+          十分な集中度評価・再生履歴・スキップ履歴が蓄積された段階で、
+          ユーザーごとのBGM推薦機能を実装する予定です。
+        </p>
+
+        <p>
+          また、利用時間や作業回数に応じたレベルアップや機能解放を導入し、
+          データを蓄積する過程そのものを楽しめる設計を目指しています。
+        </p>
+
+        <p>
+          最終的には、音響特徴量解析の研究成果も組み合わせ、
+          音楽の特徴とユーザーの集中度の関係を活用した
+          推薦システムへ発展させます。
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <a href="index.html" class="back-link bottom-back">
+      ← Portfolioへ戻る
+    </a>
+
+  </main>
+
+</body>
+
+</html>
