@@ -6,6 +6,19 @@
   <meta name="description" content="C言語・raylib製2Dゲーム NEON CITY。作品概要、技術構成、ゲーム機能の紹介と今後のBGM構想。">
   <title>NEON CITY | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* NEON CITY公開リンク：このページにだけ適用 */
+    .neon-play-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; margin: 30px auto 0; }
+    .neon-play-button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 12px 24px; border: 1px solid #00ffff; background: rgba(0, 255, 255, .08); color: #00ffff; text-decoration: none; font-weight: 700; box-shadow: 0 0 16px rgba(0, 255, 255, .22); transition: background .2s, box-shadow .2s; }
+    .neon-play-button:hover { background: rgba(0, 255, 255, .16); box-shadow: 0 0 24px rgba(0, 255, 255, .38); }
+    .neon-play-button.secondary { color: #e0eeee; border-color: rgba(0, 255, 255, .4); background: transparent; box-shadow: none; }
+    .neon-city-page .neon-play-note { margin: 18px auto 0; color: #ccc; font-size: 14px; letter-spacing: 0; }
+    @media (max-width: 550px) {
+      .neon-play-links { flex-direction: column; }
+      .neon-play-button { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) { .neon-play-button { transition: none; } }
+  </style>
 </head>
 <body>
   <div class="music-bg" aria-hidden="true">
@@ -19,6 +32,11 @@
       <div class="equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
       <h1 id="project-title">NEON CITY</h1>
       <h2>C言語・raylib製2Dゲーム</h2>
+      <div class="neon-play-links">
+        <a class="neon-play-button" href="https://ryuta1119.github.io/neon-city/" target="_blank" rel="noopener noreferrer">ブラウザで遊ぶ ↗</a>
+        <a class="neon-play-button secondary" href="https://github.com/ryuta1119/neon-city" target="_blank" rel="noopener noreferrer">ソースコードを見る ↗</a>
+      </div>
+      <p class="neon-play-note">PCのキーボード・マウスでプレイできます。別タブで開きます。</p>
     </section>
 
     <section class="section" aria-labelledby="overview-title">
@@ -40,7 +58,7 @@
 
     <section class="section" aria-labelledby="features-title">
       <h2 id="features-title" class="section-title">ゲームの特徴</h2>
-      <p class="neon-note">Ver.1.0のソースコードで以下の機能を確認しています。ブラウザ版の実行確認・公開は準備中です。</p>
+      <p class="neon-note">Ver.1.0のソースコードで以下の機能を確認しています。ブラウザ版は、ページ上部の「ブラウザで遊ぶ」から起動できます。</p>
       <div class="feature-grid neon-features">
         <article class="feature-card">
           <span class="feature-number">01</span>
