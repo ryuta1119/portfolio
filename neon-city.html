@@ -18,6 +18,21 @@
       .neon-play-button { width: 100%; }
     }
     @media (prefers-reduced-motion: reduce) { .neon-play-button { transition: none; } }
+    /* 実際のプレイスクリーンショット */
+    .neon-screenshots { display: grid; gap: 36px; margin-top: 32px; }
+    .neon-shot { margin: 0; border: 1px solid rgba(0,255,255,.35); background: rgba(0,255,255,.025); box-shadow: 0 0 18px rgba(0,255,255,.12); }
+    .neon-shot-image { display: block; background: #0c0f1e; }
+    .neon-shot img { display: block; width: 100%; height: auto; }
+    .neon-shot figcaption { padding: 24px 28px 28px; text-align: left; }
+    .neon-shot-label { color: #99eeee; font-size: 12px; letter-spacing: 2px; margin-bottom: 8px; }
+    .neon-shot h3 { color: #00ffff; font-size: 22px; margin: 0 0 12px; }
+    .neon-shot figcaption > p:last-child { color: #ddd; font-size: 16px; line-height: 1.9; }
+    @media (max-width: 550px) {
+      .neon-screenshots { gap: 24px; }
+      .neon-shot figcaption { padding: 20px; }
+      .neon-shot h3 { font-size: 20px; }
+      .neon-shot figcaption > p:last-child { font-size: 15px; }
+    }
   </style>
 </head>
 <body>
@@ -44,6 +59,43 @@
       <div class="text-block">
         <p>NEON CITYは、C言語とraylibを用いた2Dアクションゲームです。拠点の端末でミッションを選び、戦闘で得たCreditsをショップでの装備購入・強化に使う構成です。</p>
         <p>ステージごとにBGMを変え、音楽でも場面の違いを感じられるゲーム体験へ発展させる構想があります。</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="media-title">
+      <h2 id="media-title" class="section-title">ゲーム画面</h2>
+      <p class="neon-note">タイトルから拠点、戦闘へ。実際のゲーム画面を紹介します。画像をクリックすると別タブで拡大できます。</p>
+      <div class="neon-screenshots">
+        <figure class="neon-shot">
+          <a class="neon-shot-image" href="images/neon-city-title.png" target="_blank" rel="noopener noreferrer" aria-label="タイトル画面を別タブで拡大表示">
+            <img src="images/neon-city-title.png" alt="NEON CITYのタイトル画面。NEW GAME、CONTINUE、SETTINGS、EXITのメニューとBGM名Bass Overを表示。" width="1388" height="786" loading="lazy" decoding="async">
+          </a>
+          <figcaption>
+            <p class="neon-shot-label">01 / TITLE</p>
+            <h3>タイトル画面</h3>
+            <p>新規ゲーム、コンティニュー、設定を選ぶタイトル画面。ネオン調の配色でゲームの世界観を示し、制作楽曲「Bass Over」をBGMとして再生します。</p>
+          </figcaption>
+        </figure>
+        <figure class="neon-shot">
+          <a class="neon-shot-image" href="images/neon-city-hub.png" target="_blank" rel="noopener noreferrer" aria-label="HUB画面を別タブで拡大表示">
+            <img src="images/neon-city-hub.png" alt="NEON CITYの拠点画面。中央にミッション端末とショップ端末、左上にCreditsと契約数、右上に簡易マップを表示。" width="1390" height="786" loading="lazy" decoding="async">
+          </a>
+          <figcaption>
+            <p class="neon-shot-label">02 / CENTRAL HUB</p>
+            <h3>HUB画面</h3>
+            <p>ミッション端末とショップ端末が並ぶ拠点エリア。依頼の選択や装備の購入・強化を行います。所持Creditsと契約数を左上に、プレイヤーと端末の位置を簡易マップに表示しています。</p>
+          </figcaption>
+        </figure>
+        <figure class="neon-shot">
+          <a class="neon-shot-image" href="images/neon-city-combat.png" target="_blank" rel="noopener noreferrer" aria-label="戦闘画面を別タブで拡大表示">
+            <img src="images/neon-city-combat.png" alt="NEON CITYの戦闘画面。プレイヤーと敵に加え、HP、敵数、殲滅ミッションの条件と報酬、装備、簡易マップを表示。" width="1404" height="798" loading="lazy" decoding="async">
+          </a>
+          <figcaption>
+            <p class="neon-shot-label">03 / COMBAT</p>
+            <h3>戦闘画面</h3>
+            <p>ミッションに挑戦する戦闘エリア。射撃・近接攻撃・ダッシュを使い分けて敵と戦います。HPと敵数、契約の種類・報酬・経過時間、装備情報をHUDに分けて表示しています。</p>
+          </figcaption>
+        </figure>
       </div>
     </section>
 
@@ -96,26 +148,6 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="media-title">
-      <h2 id="media-title" class="section-title">ゲーム画像・動画</h2>
-      <div class="neon-media-placeholder">
-        <p class="screen-label">GAMEPLAY / COMING LATER</p>
-        <h3>プレイ画像・動画は準備中です</h3>
-        <p>実際のゲーム画面・プレイ映像を用意でき次第、ここに掲載します。</p>
-      </div>
-      <!-- 実際の素材が用意できたら、上の .neon-media-placeholder を以下のいずれかに置換。
-      <figure class="video-wrap">
-        <img class="neon-game-image" src="images/neon-city-gameplay.png" alt="NEON CITYの実際のプレイ画面。撮影内容に合わせて説明を記入。" width="1280" height="720" loading="lazy">
-        <figcaption>実際のプレイ画面（撮影したバージョン・内容を記入）</figcaption>
-      </figure>
-      <div class="video-wrap">
-        <video controls playsinline preload="metadata" aria-label="NEON CITY プレイ動画">
-          <source src="videos/neon-city-gameplay.mp4" type="video/mp4">
-          お使いのブラウザは動画再生に対応していません。
-        </video>
-      </div>
-      -->
-    </section>
     <a href="index.html" class="back-link bottom-back">← Portfolioへ戻る</a>
   </main>
 </body>
