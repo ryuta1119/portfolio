@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="C言語・raylib製2Dゲーム NEON CITY。作品概要、技術構成、ゲーム機能の紹介と今後のBGM構想。">
+  <title>NEON CITY | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-bg" aria-hidden="true">
+    <div class="circle-wave wave1"></div>
+    <div class="circle-wave wave2"></div>
+    <div class="circle-wave wave3"></div>
+  </div>
+  <main class="page detail-page neon-city-page">
+    <a href="index.html" class="back-link">← Back to Top</a>
+    <section class="top" aria-labelledby="project-title">
+      <div class="equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      <h1 id="project-title">NEON CITY</h1>
+      <h2>C言語・raylib製2Dゲーム</h2>
+    </section>
+
+    <section class="section" aria-labelledby="overview-title">
+      <h2 id="overview-title" class="section-title">概要</h2>
+      <div class="text-block">
+        <p>NEON CITYは、C言語とraylibを用いた2Dアクションゲームです。拠点の端末でミッションを選び、戦闘で得たCreditsをショップでの装備購入・強化に使う構成です。</p>
+        <p>ステージごとにBGMを変え、音楽でも場面の違いを感じられるゲーム体験へ発展させる構想があります。</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="tech-title">
+      <h2 id="tech-title" class="section-title">技術構成</h2>
+      <div class="skill-tags"><span>C言語</span><span>raylib</span><span>2D Game</span></div>
+      <dl class="neon-tech">
+        <div><dt>C言語</dt><dd>ゲームを制作するためのプログラミング言語。</dd></div>
+        <div><dt>raylib</dt><dd>2Dゲーム制作に使用するライブラリ。</dd></div>
+      </dl>
+    </section>
+
+    <section class="section" aria-labelledby="features-title">
+      <h2 id="features-title" class="section-title">ゲームの特徴</h2>
+      <p class="neon-note">Ver.1.0のソースコードで以下の機能を確認しています。ブラウザ版の実行確認・公開は準備中です。</p>
+      <div class="feature-grid neon-features">
+        <article class="feature-card">
+          <span class="feature-number">01</span>
+          <h3>自動生成ミッション</h3>
+          <p>殲滅・生存・タイムアタックの依頼候補を生成。難易度、敵構成、報酬などに変化を持たせています。</p>
+          <p class="neon-state">ソースコードで実装を確認</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">02</span>
+          <h3>戦闘</h3>
+          <p>マウスによる射撃・近接攻撃とダッシュを組み合わせて戦闘。ショップでは装備の購入・強化を行えます。</p>
+          <p class="neon-state">ソースコードで実装を確認</p>
+        </article>
+        <article class="feature-card">
+          <span class="feature-number">03</span>
+          <h3>UI / HUD</h3>
+          <p>HP、Credits、装備、ミッション情報、簡易マップを表示。街にはネオン看板や雨の表現を取り入れています。</p>
+          <p class="neon-state">ソースコードで実装を確認</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="current-music-title">
+      <h2 id="current-music-title" class="section-title">現在のBGM</h2>
+      <div class="text-block"><p>タイトル・メニュー画面では、制作楽曲「Bass Over」をループ再生します。エリア別BGMへの切り替えは、現在のゲームコードには含まれていません。</p><p><a href="music.html#bass-over" class="back-link">音楽制作ページで試聴 →</a></p></div>
+    </section>
+
+    <section class="section" aria-labelledby="plan-title">
+      <h2 id="plan-title" class="section-title">今後の構想</h2>
+      <div class="concept-box neon-plan">
+        <p class="concept-en">STAGE × MUSIC</p>
+        <h3>ステージごとのBGM</h3>
+        <p class="concept-description">ステージごとに異なるBGMを用意し、各場面の雰囲気を音楽で表現することを構想しています。ゲームの展開と音楽が結びつく体験を目指します。</p>
+        <p class="neon-state">構想段階・実装済み機能ではありません</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="media-title">
+      <h2 id="media-title" class="section-title">ゲーム画像・動画</h2>
+      <div class="neon-media-placeholder">
+        <p class="screen-label">GAMEPLAY / COMING LATER</p>
+        <h3>プレイ画像・動画は準備中です</h3>
+        <p>実際のゲーム画面・プレイ映像を用意でき次第、ここに掲載します。</p>
+      </div>
+      <!-- 実際の素材が用意できたら、上の .neon-media-placeholder を以下のいずれかに置換。
+      <figure class="video-wrap">
+        <img class="neon-game-image" src="images/neon-city-gameplay.png" alt="NEON CITYの実際のプレイ画面。撮影内容に合わせて説明を記入。" width="1280" height="720" loading="lazy">
+        <figcaption>実際のプレイ画面（撮影したバージョン・内容を記入）</figcaption>
+      </figure>
+      <div class="video-wrap">
+        <video controls playsinline preload="metadata" aria-label="NEON CITY プレイ動画">
+          <source src="videos/neon-city-gameplay.mp4" type="video/mp4">
+          お使いのブラウザは動画再生に対応していません。
+        </video>
+      </div>
+      -->
+    </section>
+    <a href="index.html" class="back-link bottom-back">← Portfolioへ戻る</a>
+  </main>
+</body>
+</html>

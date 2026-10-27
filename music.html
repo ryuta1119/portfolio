@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Logic Proを用いた音楽制作。「Bass Over」「Neon After Hours」の完成音源と楽曲紹介。">
+  <title>音楽制作 | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="music-bg" aria-hidden="true">
+    <div class="circle-wave wave1"></div>
+    <div class="circle-wave wave2"></div>
+    <div class="circle-wave wave3"></div>
+  </div>
+  <main class="page detail-page music-page">
+    <a href="index.html" class="back-link">← Back to Top</a>
+    <section class="top" aria-labelledby="music-title">
+      <div class="equalizer" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+      <h1 id="music-title">音楽制作</h1>
+      <h2>Music Production</h2>
+    </section>
+
+    <section class="section" aria-labelledby="overview-title">
+      <h2 class="section-title" id="overview-title">概要</h2>
+      <div class="text-block">
+        <p>Logic Proを用いて制作した楽曲を紹介します。<br>音の重なりや構成の変化による表現に取り組んでいます。</p>
+      </div>
+      <div class="skill-tags"><span>Logic Pro</span><span>Music Production</span></div>
+    </section>
+
+    <section class="section" aria-labelledby="track-list-title">
+      <h2 class="section-title" id="track-list-title">曲一覧</h2>
+      <nav class="music-track-list" aria-label="楽曲一覧">
+        <a href="#bass-over"><span class="music-track-number">01</span><span>Bass Over</span><span class="music-track-type">ループBGM ↓</span></a>
+        <a href="#neon-after-hours"><span class="music-track-number">02</span><span>Neon After Hours</span><span class="music-track-type">完成音源 ↓</span></a>
+      </nav>
+      <!-- 楽曲を追加する場合は、一覧のリンクと対応するarticleを追加してください。 -->
+      <article id="bass-over" class="music-track" aria-labelledby="bass-over-title">
+        <header>
+          <p class="screen-label">01 / LOOP BGM</p>
+          <h3 id="bass-over-title">Bass Over</h3>
+          <p class="music-track-subtitle">トラックの増減で、抑揚をつくる。</p>
+        </header>
+        <div class="music-track-description">
+          <h4>制作モチーフ</h4>
+          <p>ループ再生できる形のBGMとして制作した楽曲です。ループステーション音楽のように、トラックを重ねたり減らしたりすることで、曲の抑揚を表現しています。</p>
+          <h4>使用ソフト</h4>
+          <p>Logic Pro</p>
+        </div>
+        <div class="music-audio">
+          <label for="bass-over-audio">Bass Overを試聴（ループ再生）</label>
+          <audio id="bass-over-audio" controls loop preload="none">
+            <source src="audio/bass-over.wav" type="audio/wav">
+            お使いのブラウザは音声再生に対応していません。
+          </audio>
+          <p><a href="audio/bass-over.wav" download>音源をダウンロード（WAV）</a></p>
+        </div>
+      </article>
+      <article id="neon-after-hours" class="music-track" aria-labelledby="neon-after-hours-title">
+        <header>
+          <p class="screen-label">02 / ORIGINAL MUSIC</p>
+          <h3 id="neon-after-hours-title">Neon After Hours</h3>
+          <p class="music-track-subtitle">完成音源</p>
+        </header>
+        <div class="music-audio">
+          <label for="neon-after-hours-audio">Neon After Hoursを試聴</label>
+          <audio id="neon-after-hours-audio" controls preload="none">
+            <source src="audio/neon-after-hours.wav" type="audio/wav">
+            お使いのブラウザは音声再生に対応していません。
+          </audio>
+          <p><a href="audio/neon-after-hours.wav" download>音源をダウンロード（WAV）</a></p>
+        </div>
+      </article>
+    </section>
+    <a href="index.html" class="back-link bottom-back">← Portfolioへ戻る</a>
+  </main>
+</body>
+</html>
